@@ -8,5 +8,58 @@
     <artifactId>ParaBankTestAutomation</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <playwright.version>1.65.1</playwright.version>
+        <cucumber.version>8.1.0</cucumber.version>
+        <testng.version>7.12.0</testng.version>
+    </properties>
 
+    <dependencies>
+            <!-- Source: https://mvnrepository.com/artifact/com.microsoft.playwright/playwright -->
+            <dependency>
+                <groupId>com.microsoft.playwright</groupId>
+                <artifactId>playwright</artifactId>
+                <version>{$playwright.version}</version>
+            </dependency>
+        <!-- Source: https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+            <dependency>
+                <groupId>io.cucumber</groupId>
+                <artifactId>cucumber-java</artifactId>
+                <version>{$cucumber.version}</version>
+            </dependency><!-- Source: https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <!-- Source: https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+            <dependency>
+              <groupId>io.cucumber</groupId>
+              <artifactId>cucumber-testng</artifactId>
+              <version>{$cucumber.version}</version>
+            </dependency>
+
+        <!-- Source: https://mvnrepository.com/artifact/org.testng/testng -->
+            <dependency>
+               <groupId>org.testng</groupId>
+               <artifactId>testng</artifactId>
+               <version>{$testng.version}</version>
+               <scope>test</scope>
+            </dependency>
+    </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.6.1</version>
+                    <configuration>
+                        <suiteXmlFiles>
+                            <suiteXmlFile>testng.xml</suiteXmlFile>
+                        </suiteXmlFiles>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+    </build>
 </project>
