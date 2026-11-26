@@ -21,26 +21,25 @@
             <dependency>
                 <groupId>com.microsoft.playwright</groupId>
                 <artifactId>playwright</artifactId>
-                <version>{$playwright.version}</version>
+                <version>${playwright.version}</version>
             </dependency>
         <!-- Source: https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
             <dependency>
                 <groupId>io.cucumber</groupId>
                 <artifactId>cucumber-java</artifactId>
-                <version>{$cucumber.version}</version>
-            </dependency><!-- Source: https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
-        <!-- Source: https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+                <version>${cucumber.version}</version>
+            </dependency>
             <dependency>
               <groupId>io.cucumber</groupId>
               <artifactId>cucumber-testng</artifactId>
-              <version>{$cucumber.version}</version>
+              <version>${cucumber.version}</version>
             </dependency>
 
         <!-- Source: https://mvnrepository.com/artifact/org.testng/testng -->
             <dependency>
                <groupId>org.testng</groupId>
                <artifactId>testng</artifactId>
-               <version>{$testng.version}</version>
+               <version>${testng.version}</version>
                <scope>test</scope>
             </dependency>
     </dependencies>
