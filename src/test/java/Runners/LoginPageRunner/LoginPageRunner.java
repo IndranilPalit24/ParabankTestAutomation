@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @CucumberOptions(
-        features = "src/test/features/login.feature",
+        features = ".\\src\\test\\resources\\features\\login.feature",
         glue = {"Hooks", "LoginPageStepDefn"}
         
 
