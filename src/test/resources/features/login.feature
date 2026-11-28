@@ -1,5 +1,7 @@
 Feature: Login Feature of the Para Bank Application
 
+  Background: When Playwright enters the QA Environment
+
   Scenario: Successful Login with Valid Credentials
     Given User is on the Para Bank Login Page
     When User enters valid username and password

@@ -1,0 +1,4 @@
+FakeTestDataGenerator\FakerJS.class
+StepDefn\LoginPageStepDefn\LoginPageStepDefn.class
+Pages\LoginPage\LoginPage.class
+Runners\LoginPageRunner\LoginPageRunner.class

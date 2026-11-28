@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 9.359 s <<< FAILURE! -- in TestSuite
+Runners.LoginPageRunner.LoginPageRunner.runScenario["Successful Login with Valid Credentials", "Login Feature of the Para Bank Application"](1) -- Time elapsed: 7.015 s <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'User is on the Para Bank Login Page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User is on the Para Bank Login Page")
+public void user_is_on_the_para_bank_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User enters valid username and password")
+public void user_enters_valid_username_and_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User Clicks on Login Button")
+public void user_clicks_on_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User should be Redirected to the Main Page of the Para Bank Application")
+public void user_should_be_redirected_to_the_main_page_of_the_para_bank_application() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User is on the Para Bank Login Page(file:///D:/Playwrightlearn/ParaBankTestAutomation/./src/test/resources/features/login.feature:4)
+
+Runners.LoginPageRunner.LoginPageRunner.runScenario["Unsuccesful Login with Invalid Credentials", "Login Feature of the Para Bank Application"](2) -- Time elapsed: 1.295 s <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'User is on the Para Bank Login Page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User is on the Para Bank Login Page")
+public void user_is_on_the_para_bank_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User enters invalid username and password")
+public void user_enters_invalid_username_and_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User Clicks on Login Button")
+public void user_clicks_on_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User should see an error message indicating invalid login credentials")
+public void user_should_see_an_error_message_indicating_invalid_login_credentials() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User is on the Para Bank Login Page(file:///D:/Playwrightlearn/ParaBankTestAutomation/./src/test/resources/features/login.feature:11)
+
