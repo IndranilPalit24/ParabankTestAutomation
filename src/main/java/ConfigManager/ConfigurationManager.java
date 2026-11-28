@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Path;
 import java.util.Properties;
 
 public class ConfigurationManager {
@@ -12,13 +13,10 @@ public class ConfigurationManager {
     private static final Properties properties = new Properties();
 
     static {
-        try (InputStream input = ConfigurationManager.class
-                .getClassLoader().getResourceAsStream(CONFIG_FILE)) {
-            if (input == null) {
-                throw new IllegalStateException(CONFIG_FILE + " not found on the classpath");
-            }
+        try (FileInputStream input = new FileInputStream(CONFIG_FILE)) {
             properties.load(input);
         } catch (IOException e) {
+            Path looked = Path.of(CONFIG_FILE).toAbsolutePath();
             throw new IllegalStateException("Could not read " + CONFIG_FILE, e);
         }
     }

@@ -15,7 +15,7 @@ public class PlaywrightManager {
                 playwright.set(Playwright.create());
             }catch(RuntimeException e){
                 playwright.remove();
-                throw new IllegalStateException("Could not Start Playwright "+ e);
+                throw new IllegalStateException("Could not Start Playwright ", e);
             }
         }
 
